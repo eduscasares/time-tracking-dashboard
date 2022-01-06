@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+</head>
+<body>
+
+  <main>
+    <div class="profileCard">
+
+      <div class="profile">
+        <div class="avatar">
+          <img src="./images/image-jeremy.png" alt="Avatar">
+        </div>
+        <div class="profileInfo">
+          <span>Report for</span>
+          <h1>Jeremy Robson</h1>
+        </div>
+      </div>
+      
+      <div class="selectSection">
+        <ul id="selection">
+          <li id="daily" onclick="cambiarEstado('day')">Daily</li>
+          <li id="weekly" onclick="cambiarEstado('week')">Weekly</li>
+          <li id="monthly" onclick="cambiarEstado('month')">Monthly</li>
+        </ul>
+      </div>
+      
+    </div>
+
+    <div class="card work">
+      <div class="cardBody">
+        <div class="cardTitle">
+          <h2>Work</h2>
+          <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+        </div>
+        <div class="cardContent">
+          <span class="hours">32hrs</span>
+          <p class="before">Last week - 36hrs</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="card play">
+
+      <div class="cardBody">
+        
+        <div class="cardTitle">
+          <h2>Play</h2>
+          <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+        </div>
+        <div class="cardContent">
+          <span class="hours">10hrs</span>
+          <p class="before">Last week - 8hrs</p>
+        </div>
+
+      </div>
+      
+    </div>
+
+    <div class="card study">
+
+      <div class="cardBody">
+
+        <div class="cardTitle">
+          <h2>Study</h2>
+          <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+        </div>
+        <div class="cardContent">
+          <span class="hours">4hrs</span>
+          <p class="before">Last week - 7hrs</p>
+        </div>
+       
+      </div>
+      
+    </div>
+
+    <div class="card exercise">
+
+      <div class="cardBody">
+
+        <div class="cardTitle">
+          <h2>Exercise</h2>
+          <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+        </div>
+          <div class="cardContent">
+          <span class="hours">4hrs</span>
+          <p class="before">Last week - 5hrs</p>
+        </div>
+       
+      </div>
+
+    </div>
+
+    <div class="card social">
+
+      <div class="cardBody">
+        
+        <div class="cardTitle">
+          <h2>Social</h2>
+          <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+        </div>
+        <div class="cardContent">
+          <span class="hours">5hrs</span>
+          <p class="before">Last week - 10hrs</p>
+        </div>
+
+      </div>
+      
+    </div>
+
+    <div class="card selfCare">
+
+      <div class="cardBody">
+
+        <div class="cardTitle">
+          <h2>Self Care</h2>
+          <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+        </div>
+        <div class="cardContent">
+          <span class="hours">2hrs</span>
+          <p class="before">Last week - 2hrs</p>
+        </div>
+      </div>
+      
+    </div>
+      
+  </main>
+
+  <script src="./script.js"></script>
+
+</body>
+</html>
